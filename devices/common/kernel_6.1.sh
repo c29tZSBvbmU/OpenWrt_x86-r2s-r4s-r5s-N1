@@ -32,7 +32,7 @@ mkdir package/kernel/mt76/patches
 curl -sfL https://raw.githubusercontent.com/immortalwrt/immortalwrt/master/package/kernel/mt76/patches/0001-mt76-allow-VHT-rate-on-2.4GHz.patch -o package/kernel/mt76/patches/0001-mt76-allow-VHT-rate-on-2.4GHz.patch
 
 cd feeds/packages
-rm -rf libs/!(pcre) net/coova-chilli net/xtables-addons net/jool kernel
+rm -rf libs/!(pcre|glib2) net/coova-chilli net/xtables-addons net/jool kernel
 git_clone_path master https://github.com/openwrt/packages libs net/coova-chilli net/xtables-addons net/jool kernel
 cd ../../
 
